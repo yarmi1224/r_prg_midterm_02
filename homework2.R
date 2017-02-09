@@ -1,0 +1,7 @@
+par(mfrow = c(3, 2))
+plot(women$weight, women$height, main = "height vs. weight", xlab = "weight (lbs)", ylab = "height (in)")
+plot(women$weight, women$height, type = "l", main = "height vs. weight", xlab = "wieght (lbs)", ylab = "height (in)")
+hist(women$weight, main = "Distribution of weight", xlab = "weight (lbs)")
+boxplot(iris$Sepal.Length~iris$Species, main = "Sepal length by species")
+barplot(women$weight,main = "Distribution of weight",ylab = "weight (lbs)")
+barplot(mtcars$disp, names = row.names(mtcars), horiz = TRUE,las=1,cex.names = 0.3,main = "Horse Power of Vehicles",xlab="disp")
